@@ -27,7 +27,6 @@ namespace ReviewSite
             }
 
             app.UseStaticFiles();
-
             app.UseMvc(routes =>
             {
                 routes.MapRoute(

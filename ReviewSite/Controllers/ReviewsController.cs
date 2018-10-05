@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ReviewSite.Controllers
 {
-    public class HomeController : Controller
+    public class ReviewsController : Controller
     {
         public ViewResult Index()
         {
