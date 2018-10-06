@@ -12,14 +12,17 @@
     
 </head>
 <body>
-    <h1>Home Page</h1>
+    <h1>Corgi Types</h1>
+
     @foreach (var review in Model)
     {
         <div>
             <a href="/Review/Details/@review.Id">
-                @review.Content
+                @review.Title;
             </a>
         </div>
     }
+    <img src="~/Images/CorgiMail.png" />"
+
 </body>
 </html>
