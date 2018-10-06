@@ -1,14 +1,13 @@
 using Microsoft.AspNetCore.Mvc;
 using NSubstitute;
+using ReviewSite;
 using ReviewSite.Controllers;
 using ReviewSite.Models;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-
-
-namespace ReviewSite.Tests
+namespace XUnitTestProject1
 {
     public class ReviewsControllerTests
     {
@@ -22,25 +21,25 @@ namespace ReviewSite.Tests
         }
 
         [Fact]
-            public void Index_Returns_A_View()
-            {
-                var result = underTest.Index();
+        public void Index_Returns_A_View()
+        {
+            var result = underTest.Index();
 
-                Assert.IsType<ViewResult>(result);
-            }
+            Assert.IsType<ViewResult>(result);
+        }
 
         [Fact]
         public void Index_Gets_All_Reviews()
         {
-            
+
             var result = underTest.Index();
             reviewRepo.Received().GetAll();
         }
-        
+
         [Fact] //controller passes Model into View
         public void Index_Sets_AllDogs_As_Model()
         {
-            var expectedModel = new Dictionary<int,Review>();
+            var expectedModel = new List<Review>();
             reviewRepo.GetAll().Returns(expectedModel);
 
             var result = underTest.Index();
@@ -67,5 +66,5 @@ namespace ReviewSite.Tests
             var model = result.Model;
             Assert.Equal(expectedModel, model);
         }
-    }   
+    }
 }

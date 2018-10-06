@@ -20,9 +20,9 @@ namespace ReviewSite
             return allReviews[id];
         }
 
-        public Dictionary<int, Review> GetAll()
+        public List<Review> GetAll()
         {
-            return allReviews;
+            return allReviews.Values.ToList();
         }
     }
 }
