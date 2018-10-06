@@ -13,12 +13,12 @@ namespace ReviewSite.Tests
     public class ReviewsControllerTests
     {
         IReviewRepository reviewRepo;
-        ReviewsController underTest;
+        ReviewController underTest;
 
         public ReviewsControllerTests()
         {
             reviewRepo = Substitute.For<IReviewRepository>();
-            underTest = new ReviewsController(reviewRepo);
+            underTest = new ReviewController(reviewRepo);
         }
 
         [Fact]

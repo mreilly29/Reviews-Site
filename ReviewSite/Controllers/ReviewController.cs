@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace ReviewSite.Controllers
 {
-    public class ReviewsController : Controller
+    public class ReviewController : Controller
     {
         private IReviewRepository reviewRepo;
 
-        public ReviewsController(IReviewRepository reviewRepo)
+        public ReviewController(IReviewRepository reviewRepo)
         {
             this.reviewRepo = reviewRepo;
         }

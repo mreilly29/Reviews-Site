@@ -1,4 +1,4 @@
-﻿
+﻿@model IEnumerable<ReviewSite.Models.Review>
 @{
     Layout = null;
 }
@@ -12,5 +12,13 @@
 </head>
 <body>
     <h1>Home Page</h1>
+    @foreach (var review in Model)
+    {
+        <div>
+            <a href="/Home/Details/@review.Id">
+                @review.Content
+            </a>
+        </div>
+    }
 </body>
 </html>
