@@ -9,10 +9,21 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Details</title>
+    <link href="~/css/Main.css" rel="stylesheet" />
 </head>
-<body>
+<body>   
+    <div>
+        <a href="/Review/Index">Back to Home page</a>
+    </div>
+
     <h1>@Model.Title</h1>
-    <p>@Model.Content</p>
-    <img src="@Model.ImageUrl" />
+    <div id="@Model.Id">
+        <p>@Model.Content</p>
+    </div>
+    <img src="@Model.ImageUrl" width="300" alt="@Model.Title" />
+    <div>
+        Category: @Model.ReviewCategory
+    </div>
+
 </body>
 </html>
