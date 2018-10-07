@@ -1,11 +1,10 @@
 ﻿body {
-    background-color: indianred;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding:20px;
+    background-color:lightcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
 }
 h1{
-    color:whitesmoke;
-    
+    color:darkslateblue;
 }
 img{
     border-radius:20px;
@@ -14,7 +13,7 @@ div a{
     border:groove;
     padding:5px;
     text-decoration:none;
-    color:navajowhite;
-    background-color:darkred
+    color:ghostwhite;
+    background-color:grey
 }
 

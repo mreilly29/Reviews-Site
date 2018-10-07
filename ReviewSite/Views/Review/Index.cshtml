@@ -9,16 +9,15 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
-
     <link href="~/css/IndexSheet.css" rel="stylesheet" />
 </head>
 <body>
-    <div></div>
-    <h1>Corgi Types</h1>
+    <h1 align="center">Corgi Types       
+    </h1>
 
     @foreach (var review in Model)
     {
-        <div>
+        <div align="center">
             <a href="/Review/Details/@review.Id">
                 @review.Title;
             </a>

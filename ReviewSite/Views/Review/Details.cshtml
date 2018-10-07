@@ -16,12 +16,12 @@
         <a href="/Review/Index">Back to Home page</a>
     </div>
 
-    <h1>@Model.Title</h1>
-    <div id="@Model.Id">
+    <h1 align="center">@Model.Title</h1>
+    <div align="center" id="@Model.Id">
         <p>@Model.Content</p>
+        <img src="@Model.ImageUrl" width="300" alt="@Model.Title" />
     </div>
-    <img src="@Model.ImageUrl" width="300" alt="@Model.Title" />
-    <div>
+    <div align="center">
         Category: @Model.ReviewCategory
     </div>
 
