@@ -18,5 +18,8 @@ a {
     text-decoration: none;
     font-size: 3vw;
     font-weight: bold;
-    text-shadow: -.5px .5px .5px steelblue;
+    text-shadow: -.5px .5px .5px steelblue;    
+}
+a:hover{
+    color:mediumpurple;
 }

@@ -11,12 +11,22 @@
     <title>Details</title>
     <link href="~/css/Main.css" rel="stylesheet" />
 </head>
-<body>   
+<body>
     <div>
         <a href="/Review/Index">Back to Home page</a>
+
+        <div id="button">
+            @if (Model.Id == 3)
+            {
+                Model.Id = 0;
+            }
+            <a href="/review/details/@(Model.Id+1)">next</a>
+        </div>
     </div>
 
     <h1 align="center">@Model.Title</h1>
+
+
     <div align="center" id="@Model.Id">
         <p>@Model.Content</p>
         <img src="@Model.ImageUrl" alt="@Model.Title" />
@@ -24,6 +34,7 @@
     <div class="category" align="center">
         Category: @Model.ReviewCategory
     </div>
+
 
 </body>
 </html>
