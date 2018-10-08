@@ -2,18 +2,29 @@
     background-color:lightcyan;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 20px;
+
 }
-h1{
-    color:darkslateblue;
+h1 {
+    color: steelblue;
+    text-shadow: 2px 1px 2px #000000;
 }
-img{
-    border-radius:20px;
+img {
+    border-radius: 20px;
+    width: 50%;
+    height: auto;
 }
-div a{
-    border:groove;
-    padding:5px;
-    text-decoration:none;
-    color:ghostwhite;
-    background-color:grey
+p {
+    font-style: oblique;
+    font-size: 2px 2vw;
+}
+div a {
+    border: groove;
+    padding: 5px;
+    text-decoration: none;
+    color: lightcyan;
+    background-color: lightslategrey;    
+}
+.category{
+    font-size:x-small;
 }
 
